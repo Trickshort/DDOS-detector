@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1e2e, #121826);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  max-width: 700px;
+  width: 90%;
+  padding: 25px;
+  background: rgba(40, 44, 52, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.app-header {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #61dafb;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.loading {
+  color: yellow;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.error {
+  color: #ff4c4c;
+  font-weight: bold;
+  background: rgba(255, 76, 76, 0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  font-size: 1.4em;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.ddos {
+  background: linear-gradient(135deg, #ff4c4c, #b22222);
+  color: white;
+  animation: pulse 1.5s infinite alternate;
+}
+
+.benign {
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
